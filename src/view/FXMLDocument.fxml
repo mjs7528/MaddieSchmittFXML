@@ -6,15 +6,34 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="652.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
     <children>
-        <Button fx:id="buttonClickMe" layoutX="114.0" layoutY="22.0" onAction="#handleButtonAction" text="Click Me!" />
+        <Button fx:id="button" layoutX="126" layoutY="90" onAction="#handleButtonAction" text="Click Me!" />
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Button fx:id="buttonCreate" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#createMoneymodel" text="Create" />
-      <Button fx:id="buttonRead" layoutX="233.0" layoutY="22.0" mnemonicParsing="false" onAction="#readMoneymodel" text="Read" />
-      <Button fx:id="buttonDelete" layoutX="228.0" layoutY="155.0" mnemonicParsing="false" onAction="#deleteMoneymodel" text="Delete" />
-      <Button fx:id="buttonUpdate" layoutX="13.0" layoutY="155.0" mnemonicParsing="false" onAction="#updateMoneymodel" text="Update" />
-      <Button fx:id="buttonFindByIdAndAdded" layoutX="13.0" layoutY="69.0" mnemonicParsing="false" onAction="#findMoneyModelByIdAndAdded" text="FindByIdAndAdded" />
-      <Button fx:id="buttonFindByIdAndSpent" layoutX="168.0" layoutY="69.0" mnemonicParsing="false" onAction="#findMoneyModelByIdAndSpent" text="FindByIdAndSpent" />
+      <Button fx:id="buttonAdded" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#addMoneyModel" text="Added" />
+      <Button fx:id="buttonSpent" layoutX="14.0" layoutY="54.0" mnemonicParsing="false" onAction="#spentMoneyModel" text="Spent" />
+      <Button fx:id="buttonUpdate" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#updateMoneyModel" text="Update" />
+      <Button fx:id="buttonDelete" layoutX="287.0" layoutY="23.0" mnemonicParsing="false" onAction="#deleteMoneyModel" text="Delete" />
+      <Button fx:id="buttonReadByIDAndName" layoutX="134.0" layoutY="54.0" mnemonicParsing="false" onAction="#readByIDAndName" text="Read by Id and Name" />
+      <Button fx:id="buttonReadByNameAndAdded" layoutX="188.0" layoutY="131.0" mnemonicParsing="false" onAction="#readByNameAndAdded" text="Read by Name and Added" />
+      <Button fx:id="buttonRead" layoutX="14.0" layoutY="131.0" mnemonicParsing="false" onAction="#readMoneyModel" text="Read" />
+      <Separator layoutX="14.0" layoutY="196.0" prefHeight="5.0" prefWidth="345.0" />
+      <Label layoutX="24.0" layoutY="217.0" text="Search MoneyModel" />
+      <Label layoutX="24.0" layoutY="249.0" text="By Name:" />
+      <TextField fx:id="textboxName" layoutX="93.0" layoutY="244.0" />
+      <Button layoutX="286.0" layoutY="244.0" mnemonicParsing="false" onAction="#searchByNameAction" text="Search" />
+      <TableView fx:id="MoneyModelTable" layoutX="5.0" layoutY="336.0" prefHeight="200.0" prefWidth="372.0">
+        <columns>
+          <TableColumn fx:id="MoneyModelID" prefWidth="62.0" text="ID" />
+          <TableColumn fx:id="MoneyModelName" prefWidth="112.0" text="Name" />
+            <TableColumn fx:id="MoneyModelSpent" prefWidth="89.0" text="Spent" />
+            <TableColumn fx:id="MoneyModelAdded" prefWidth="108.0" text="Added" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonReadByName" layoutX="260.0" layoutY="90.0" mnemonicParsing="false" onAction="#readByName" text="Read by Name" />
+      <Button layoutX="231.0" layoutY="287.0" mnemonicParsing="false" onAction="#searchByNameAdvancedAction" text="Advanced Search" />
+      <Button layoutX="14.0" layoutY="545.0" mnemonicParsing="false" onAction="#actionShowDetailsInPlace" text="Show Details In-Place" />
+      <Button layoutX="277.0" layoutY="545.0" mnemonicParsing="false" onAction="#actionShowDetails" text="Show Details" />
+   
     </children>
 </AnchorPane>

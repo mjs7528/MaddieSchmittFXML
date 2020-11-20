@@ -90,27 +90,5 @@ public class DetailModelController
         backButton.setDisable(false);
     }
 
-    void initData(controller.MoneyModel selectedMoneyModel)
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private static class MoneyModel
-    {
-
-        public MoneyModel()
-        {
-        }
-
-        private Object getId()
-        {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
-
-        private String getName()
-        {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
-    }
-
+   
 }

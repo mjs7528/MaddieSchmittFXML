@@ -1,0 +1,52 @@
+#mensHeader {
+    font-size: 60px;
+}
+
+#mensMenu {
+    word-spacing: 40px;
+    font-weight: 100;
+    font-size: 32px;
+    position: relative;
+    left: 620px;
+    width: fit-content;
+    height: fit-content;
+    top: -20px;
+}
+
+#mensMenu > li:hover {
+    background-color: lightblue;
+}
+
+#mensMenu > li {
+    display: inline;
+    border: solid 2px;
+    margin: 2px;
+    padding: 3px;
+}
+
+#mensClothingContainer{
+    border: solid 3px;
+    background-color: lightblue;
+    position: relative;
+    height: 700px;
+    margin: auto;
+    padding: 5px;
+    width: fit-content;
+    top: -20px;
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 30px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    align-content: center;
+}
+
+#mensClothingContainer > div {
+    border: solid black 2px;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+}
